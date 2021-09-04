@@ -1,0 +1,24 @@
+{
+    "name": "realitaetsverlust/phpcord",
+    "type": "framework",
+    "description": "A discord bot framework written in PHP, and PHP only",
+    "repositories": [
+        {
+            "type": "vcs",
+            "url":  "git@github.com:Realitaetsverlust/StringWrapper.git"
+        },
+        {
+            "type": "vcs",
+            "url":  "git@github.com:Realitaetsverlust/ArrayWrapper.git"
+        }
+    ],
+    "require": {
+        "amphp/amp": "^2.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Realitaetsverlust\\PHPCord\\Core\\": "./Core",
+            "Realitaetsverlust\\PHPCord\\Actions\\": "./Actions"
+        }
+    }
+}
